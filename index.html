@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a9d8eddbc.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Nasa's Perseverance</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav id="home">
+            <button class="menu-button" onclick="toggleNav()"><i class="fas menu-toggle fa-bars"></i></button> 
+            
+            <div class="nav-title-container"><i class="fas fa-rocket rocket-icon"></i><h1 class="nav-title">Perseverance's Tribute</h1></div>
+        </nav>
+
+        <div class="container">
+        <div class="top-container center-container">
+            <div class="yt-Video"><iframe class="yt-Video" src="https://www.youtube.com/embed/4czjS9h4Fpg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+            <div class="down-arrow"><a href="#info-container"><i class="fas fa-chevron-down"></i></a></div>
+        </div>
+        </div>
+
+        <div class="info-container" id="info-container">
+            <h2 class="title vert-line">About the Rover</h2>
+            <p class="info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum veniam quod fugiat. Nobis nihil impedit totam culpa! Itaque maxime reiciendis cum nesciunt exercitationem. Sed officia id, facilis provident aliquid laborum illum ea iure reprehenderit, ad labore saepe dolorem officiis sequi. Sint necessitatibus eum sapiente aut recusandae impedit accusamus totam qui.</p>
+        </div>
+
+        <div class="modal-container">
+            <div class="circle1"></div>
+            <p class="modal-text appear-on-scroll">Click on us!</p>
+            <div class="btn-container">
+                <button class="modal-btn btn1">The Build</button>
+                <button class="modal-btn btn2">The Journey</button>
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <!-- Could add a nasa api for pictures here later -->
+            <img src="https://mars.nasa.gov/system/resources/detail_files/25699_PIA24482-800.jpg" alt="Picture from Mars by Perseverance" class="slider-image1">
+            <img src="https://mars.nasa.gov/system/resources/detail_files/25618_PIA24421-4-1200.jpg" alt="Picture of Perseverance's Deck" class="slider-image2">
+        </div>
+
+
+
+        <!-- Need to add the modal pop up and style it here -->
+
+        <!-- End modal popup -->
+
+        <div class="quiz-container">
+            <div class="quiz-box">
+                <!-- Put quiz elements here -->
+            </div>
+        </div>
+
+        <div>
+            <h3 class="modal-text appear-on-scroll">Interested in more NASA?</h3>
+            <div class="btn-container">
+            <button class="modal-btn btn1 bottom-margin"><a class="link" href="#">Search NASA</a></button>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="socials-container">
+                <i class="fab fa-facebook-square social"></i>
+                <i class="fab fa-twitter-square social"></i>
+                <i class="fab fa-instagram-square social"></i>
+            </div>
+            <hr class="line">
+            <div class="footer-title">Perseverance's Tribute</div>
+        </div>
+
+        <!-- Hidden sidebar -->
+        <aside class="nav-sidebar">
+            <ul>
+                <li><span>Navigation</span></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Info</a></li>
+                <li><a href="#location">Space Quiz</a></li>
+                <li><a href="#contact">Nasa Search</a></li>
+                <li><img class="rotating-mars" src="./images/43-PM-unscreen.gif" alt=""></li>
+            </ul>
+        </aside>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
