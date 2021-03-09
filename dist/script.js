@@ -45,3 +45,30 @@ if(document.documentElement.scrollTop>=child.offsetTop)//Adjust Tolerance
 }
 
 };
+
+let modal = document.querySelector('.modal');
+let modalBtn = document.querySelector('.modal-btn');
+let modalBtn1 = document.querySelector('.modal-btn1');
+let modalPara = document.querySelector('.modal-para');
+let closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+modalBtn.addEventListener('click', openModal);
+modalBtn1.addEventListener('click', openModal1);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+function outsideClick(e) {
+    if(e.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+function openModal() {
+    modal.style.display = 'block';
+    modalPara.textContent = 'hello';
+}
+function openModal1() {
+    modal.style.display = 'block';
+    modalPara.textContent = 'Hi';
+}
+function closeModal() {
+    modal.style.display = 'none';
+}
