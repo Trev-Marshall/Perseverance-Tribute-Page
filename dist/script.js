@@ -63,11 +63,11 @@ function outsideClick(e) {
 };
 function openModal() {
     modal.style.display = 'block';
-    modalPara.textContent = 'hello';
+    modalPara.textContent = 'The rover costed about 2.4 BILLION to make and another 300 million to keep up and running for another 2 years. It is the size of a small car!';
 };
 function openModal1() {
     modal.style.display = 'block';
-    modalPara.textContent = 'Hi';
+    modalPara.textContent = 'It took 7 months for the rover to reach mars and land. According to NASA Perseverance left the Earth at about 24,600 mph, which is astronomical!... See what I did there!';
 };
 function closeModal() {
     modal.style.display = 'none';

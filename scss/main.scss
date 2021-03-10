@@ -337,14 +337,21 @@ nav {
 }
 
 .modal-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
     background: $primaryColor;
     margin: 20% auto;
-    padding: 30px;
+    padding: 20px;
     width: 70%;
+}
+.modal-para {
+    padding: 30px;
+    font-size: 1.5em;
 }
 .closeBtn {
     color: grey;
-    float: right;
+    align-self: flex-end;
     font-size: 30px;
 }
 .closeBtn:hover,
