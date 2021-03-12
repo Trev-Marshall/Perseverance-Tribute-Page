@@ -43,13 +43,13 @@ nav {
 
 .nav-link a {
     text-decoration: none;
-    color: $accentColor;
+    color: white;
     padding: 20px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-link a:hover {
-    color: gold;
+    color: $accentColor;
     text-decoration: underline;
 }
 
@@ -174,6 +174,7 @@ nav {
 
 .down-arrow {
     display: flex;
+    color: white;
     justify-content: center;
     padding: 30px;
     font-size: 3em;
@@ -222,7 +223,7 @@ nav {
     transition: all 0.6s ease-in-out 0s;
 }
 .image-slider:hover .slider-image1 {
-    transform: translateX(75px);
+    transform: translateX(15%);
     box-shadow: 0px 0px 0px black;
     filter: grayscale(0.4);
 }
@@ -234,16 +235,17 @@ nav {
     transition: all 0.6s ease-in-out 0s;
 }
 .image-slider:hover .slider-image2 {
-    transform: translateX(125px);
+    transform: translateX(27%);
     filter: grayscale(0.4);
 }
 
 .modal-container {
     position: relative;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 55vh;
+    height: 100%;
     width: 100%;
     background-color: $fourthColor;
     z-index: -3;
@@ -323,7 +325,7 @@ nav {
 }
 
 .footer-container {
-    height: 40vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -404,16 +406,52 @@ nav {
     margin: 70px auto;
 }
 
+@media screen and (max-width: 1080px) {
+    .image-slider {
+        display: none;
+    }
+    // Turn into image of the day later
+}
+
 @media screen and (max-width: 840px) {
     .menu-button {
         display: block;
     }
+    .info-container {
+        height: auto;
+    }
     .nav-link-container {
         display: none;
+    }
+    .btn-container {
+        flex-direction: column;
+    }
+    .modal-btn,
+    .modal-btn1 {
+        margin: 20px 20px;
+        width: 80%;
+        align-self: center;
+    }
+    .modal-btn:hover::before,
+    .modal-btn1:hover::before {
+        width: 100%;
+        height: 800%;
+    }
+    .modal-text {
+        text-align: center;
+        margin: 30px 0 70px 0;
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 446px) {
     .nav-title-container {
         font-size: 0.6em;
+    }
+    .info-container {
+        flex-direction: column;
+    }
+    .title {
+        background-color: $thirdColor;
+        top: 60px;
     }
 }
