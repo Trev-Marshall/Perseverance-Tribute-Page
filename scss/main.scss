@@ -369,3 +369,9 @@ nav {
         opacity: 100%;
     }
 }
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+}
