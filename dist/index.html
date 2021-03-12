@@ -15,8 +15,13 @@
     <div class="page-wrapper">
         <nav id="home">
             <button class="menu-button" onclick="toggleNav()"><i class="fas menu-toggle fa-bars"></i></button> 
-            
-            <div class="nav-title-container"><i class="fas fa-rocket rocket-icon"></i><h1 class="nav-title">Perseverance's Tribute</h1></div>
+            <div class="nav-link-container">
+            <li class="nav-link"><a href="#home">Home</a></li>
+            <li class="nav-link"><a href="#info">Info</a></li>
+            <li class="nav-link"><a href="#quiz">Space Quiz</a></li>
+            <li class="nav-link"><a href="#nasa-search">Nasa Search</a></li>
+            </div>
+            <div class="nav-title-container"><h1 class="nav-title">Perseverance's Tribute</h1><i class="fas fa-rocket rocket-icon"></i></div>
         </nav>
 
         <div class="container">
@@ -28,7 +33,7 @@
         </div>
         </div>
 
-        <div class="info-container" id="info-container">
+        <div class="info-container" id="info">
             <h2 class="title vert-line">About the Rover</h2>
             <p class="info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum veniam quod fugiat. Nobis nihil impedit totam culpa! Itaque maxime reiciendis cum nesciunt exercitationem. Sed officia id, facilis provident aliquid laborum illum ea iure reprehenderit, ad labore saepe dolorem officiis sequi. Sint necessitatibus eum sapiente aut recusandae impedit accusamus totam qui.</p>
         </div>
@@ -61,7 +66,7 @@
 
 
 
-        <div class="quiz-container">
+        <div class="quiz-container" id="quiz">
             <div class="quiz-box">
                 
             </div>
@@ -69,7 +74,7 @@
             <div class="results-container"></div>
         </div>
 
-        <div>
+        <div id="nasa-search">
             <h3 class="modal-text">Interested in more NASA?</h3>
             <div class="btn-container">
             <button class="modal-btn btn1 bottom-margin api-btn"><a class="link" href="#">Search NASA</a></button>

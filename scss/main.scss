@@ -31,11 +31,38 @@ nav {
     padding-right: 50px;
 }
 
+.nav-link-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    margin: auto;
+    list-style-type: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: $accentColor;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+.nav-link ul li {
+    text-decoration: none;
+}
+
 .menu-button {
     background-color: #ffffff00;
     border: none;
     margin: 0 0 0 20px;
     transition: transform 0.2s ease-in-out;
+    display: none;
 }
 
 .menu-button:hover {
@@ -292,6 +319,7 @@ nav {
 .rocket-icon {
     margin: auto;
     font-size: 28px;
+    padding-right: 20px;
 }
 
 .footer-container {
@@ -374,4 +402,18 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 70px auto;
+}
+
+@media screen and (max-width: 840px) {
+    .menu-button {
+        display: block;
+    }
+    .nav-link-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 446px) {
+    .nav-title-container {
+        font-size: 0.6em;
+    }
 }
