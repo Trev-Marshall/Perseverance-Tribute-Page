@@ -207,6 +207,10 @@ nav {
     border-right: 3px solid $accentColor;
 }
 
+.attribution-text {
+    color: rgba(241, 237, 237, 0.3);
+}
+
 .image-slider {
     display: flex;
     margin: 60px 0;
@@ -404,6 +408,39 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 70px auto;
+}
+
+.quiz-title {
+    font-size: 2em;
+    align-self: center;
+    text-decoration: underline;
+}
+
+.quiz-box {
+    padding: 100px;
+    background-color: $secondaryColor;
+}
+.answers {
+    padding-bottom: 20px;
+}
+.question {
+    padding-bottom: 7px;
+}
+
+#submit {
+    width: 100%;
+    align-self: center;
+    border: none;
+    background-color: $accentColor;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.divider {
+    width: 80%;
+    margin: 30px 0 80px 0;
+    align-self: center;
 }
 
 @media screen and (max-width: 1080px) {
