@@ -11,9 +11,41 @@
     <title>Search NASA!</title>
 </head>
 <body>
-    <h1>Start the search here!</h1>
-    <button id="search">Search</button>
+        <div class="iotd-wrapper">
+    <nav id="home">
+        <button class="menu-button" onclick="toggleNav()"><i class="fas menu-toggle fa-bars"></i></button>
+        <div class="nav-link-container">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+        </div>
+        <div class="nav-title-container">
+            <h1 class="nav-title">Perseverance's Tribute</h1><i class="fas fa-rocket rocket-icon"></i>
+        </div>
+    </nav>
+
     <div id="content"></div>
+
+    <!-- Hidden sidebar -->
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Navigation</span></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Info</a></li>
+            <li><a href="#location">Space Quiz</a></li>
+            <li><a href="search.html">Nasa Search</a></li>
+            <li><img class="rotating-mars" src="./images/43-PM-unscreen.gif" alt=""></li>
+        </ul>
+    </aside>
+
+    <div class="footer-container">
+        <div class="socials-container">
+            <i class="fab fa-facebook-square social"></i>
+            <i class="fab fa-twitter-square social"></i>
+            <i class="fab fa-instagram-square social"></i>
+        </div>
+        <hr class="line">
+        <div class="footer-title">Perseverance's Tribute</div>
+    </div>
+    </div>
     <script src="./nasaSearch.js"></script>
 </body>
 </html>

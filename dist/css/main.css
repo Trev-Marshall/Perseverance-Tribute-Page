@@ -7,6 +7,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  background-color: #3a015c;
 }
 
 .page-wrapper {
@@ -22,6 +23,7 @@ html {
   background-color: #3a015c;
   color: #d1cccc;
   z-index: -10;
+  min-width: 100vh;
 }
 
 nav {
@@ -64,8 +66,8 @@ nav {
   text-decoration: none;
   color: white;
   padding: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-link a:hover {
@@ -379,7 +381,9 @@ nav {
   transition: all 0.6s ease;
 }
 
-.btn1::before {
+.btn1::before,
+.btn2::before,
+.btn3::before {
   width: 0%;
   height: 400%;
 }
@@ -400,10 +404,6 @@ nav {
   color: white;
 }
 
-.bottom-margin {
-  margin-bottom: 70px;
-}
-
 .nav-title-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,7 +421,6 @@ nav {
 }
 
 .footer-container {
-  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +437,9 @@ nav {
           justify-content: center;
   font-size: 30px;
   background-color: #290025;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .social {
@@ -506,24 +508,6 @@ nav {
   cursor: pointer;
 }
 
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
 .quiz-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +540,14 @@ nav {
   padding-bottom: 7px;
 }
 
+#nasa-search {
+  margin-bottom: 250px;
+}
+
+.api-btn {
+  border: none;
+}
+
 #submit {
   width: 100%;
   -ms-flex-item-align: center;
@@ -574,6 +566,46 @@ nav {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin: 100px 0 60px 0;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.iotd-title {
+  padding: 20px;
+}
+
+.iotd-p {
+  padding: 20px;
+  max-width: 75ch;
+}
+
+.iotd-wrapper {
+  position: relative;
+  font-family: "Comfortaa", cursive;
+  background-color: #3a015c;
+  color: #d1cccc;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 1080px) {
@@ -618,6 +650,12 @@ nav {
     text-align: center;
     margin: 30px 0 70px 0;
     font-size: 30px;
+  }
+  #content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

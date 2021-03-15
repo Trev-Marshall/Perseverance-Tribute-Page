@@ -3,6 +3,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: $primaryColor;
 }
 
 .page-wrapper {
@@ -13,6 +14,7 @@ html {
     background-color: $primaryColor;
     color: rgb(209, 204, 204);
     z-index: -10;
+    min-width: 100vh;
 }
 
 nav {
@@ -45,7 +47,7 @@ nav {
     text-decoration: none;
     color: white;
     padding: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link a:hover {
@@ -78,6 +80,8 @@ nav {
 .menu-button.active.focus {
     outline: none;
 }
+
+
 
 .menu-toggle {
     font-size: 2em;
@@ -300,7 +304,9 @@ nav {
     transition: all 0.6s ease;
 }
 
-.btn1::before {
+.btn1::before,
+.btn2::before,
+.btn3::before {
     width: 0%;
     height: 400%;
 }
@@ -320,10 +326,6 @@ nav {
     color: white;
 }
 
-.bottom-margin {
-    margin-bottom: 70px;
-}
-
 .nav-title-container {
     display: flex;
     flex-direction: row;
@@ -335,7 +337,6 @@ nav {
 }
 
 .footer-container {
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -343,6 +344,9 @@ nav {
     justify-content: center;
     font-size: 30px;
     background-color: $secondaryColor;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .social {
@@ -401,15 +405,6 @@ nav {
     cursor: pointer;
 }
 
-@keyframes appear {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
 .quiz-container {
     display: flex;
     flex-direction: column;
@@ -433,6 +428,14 @@ nav {
     padding-bottom: 7px;
 }
 
+#nasa-search {
+    margin-bottom: 250px;
+}
+
+.api-btn {
+    border: none;
+}
+
 #submit {
     width: 100%;
     align-self: center;
@@ -447,6 +450,36 @@ nav {
     width: 80%;
     margin: 30px 0 80px 0;
     align-self: center;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin: 100px 0 60px 0;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.iotd-title {
+    padding: 20px;
+}
+
+.iotd-p {
+    padding: 20px;
+    max-width: 75ch;
+}
+
+.iotd-wrapper {
+    position: relative;
+    font-family: "Comfortaa", cursive;
+    background-color: $primaryColor;
+    color: rgb(209, 204, 204);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 1080px) {
@@ -487,6 +520,9 @@ nav {
         text-align: center;
         margin: 30px 0 70px 0;
         font-size: 30px;
+    }
+    #content {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 446px) {
