@@ -227,7 +227,7 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 70px;
-  height: 70vh;
+  height: 100%;
   background-color: #4f0147;
 }
 
@@ -240,6 +240,11 @@ nav {
           align-items: center;
   padding: 50px 60px;
   font-size: x-large;
+  max-width: 65ch;
+}
+
+#rover-model {
+  margin: auto 10px;
 }
 
 .title {
@@ -573,6 +578,9 @@ nav {
 
 @media screen and (max-width: 1080px) {
   .image-slider {
+    display: none;
+  }
+  #rover-model {
     display: none;
   }
 }
