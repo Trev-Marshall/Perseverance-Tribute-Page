@@ -322,7 +322,6 @@ nav {
 }
 
 .link {
-    text-decoration: none;
     color: white;
 }
 
@@ -456,11 +455,12 @@ nav {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin: 100px 0 60px 0;
 }
 .column {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-top: 70px;
 }
 
 .iotd-title {
@@ -468,7 +468,7 @@ nav {
 }
 
 .iotd-p {
-    padding: 20px;
+    padding: 20px 20px 300px 20px;
     max-width: 75ch;
 }
 
@@ -535,5 +535,8 @@ nav {
     .title {
         background-color: $thirdColor;
         top: 60px;
+    }
+    .nav-title {
+        font-size: 2em;
     }
 }

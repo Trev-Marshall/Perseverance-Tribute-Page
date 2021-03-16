@@ -139,7 +139,7 @@ const myQuestions = [
     {
         question: 'How big is the Mars Perseverance rover?',
         answers: {
-            a: 'Octipus-Sized',
+            a: 'Octapus-Sized',
             b: 'Car-Sized',
             c: 'Tank-Sized'
         },
