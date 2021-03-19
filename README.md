@@ -4,7 +4,7 @@ Looking to find out more about NASA's most recent accomplishment?
 
 Well, look no further.
 
-This site has it all from the video of the landing incase you missed it to an interactive model of the rover!
+This site has it all from the video of the landing in case you missed it to an interactive model of the rover!
 If you are looking for a suprise scroll to the bottom of the page and click on the link to see NASA's image of the day!
 
 ## How to run..
