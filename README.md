@@ -9,7 +9,7 @@ If you are looking for a suprise scroll to the bottom of the page and click on t
 
 ## How to run..
 
-If you are just looking for the live version then click (here)[http://trevor--marshall.com/perseverance-tribute-page/nasa-index.html].
+If you are just looking for the live version then click [here](http://trevor--marshall.com/perseverance-tribute-page/nasa-index.html).
 
 If you are looking to run this on your own computer then simply download the files, have a SCSS compiler, and open the index.html in a live server to start making changes!
 
